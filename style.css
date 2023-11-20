@@ -1,0 +1,113 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 20px;
+}
+.footer  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 20px;
+}
+.footer .logo img{
+    width: 150px;
+    height: 50px;
+    padding: none;
+    margin: none;
+}
+.footer .icons img{
+    width: 50px;
+    height: 50px;
+    padding: none;
+    margin: none;
+}
+.footer .links{
+    display: flex;
+    justify-content:space-around;
+    gap: 10px;
+    flex-grow: 2;
+}
+.navbar .logo, .navbar {
+    flex-grow: 1;
+}
+
+.navbar .menu {
+    display: flex;
+    justify-content:space-around;
+    gap: 10px;
+    flex-grow: 2;
+}
+
+.navbar .logo img {
+
+    width: 150px; 
+    height: auto; 
+    padding: 0;
+}
+
+.navbar .icon img {
+    width: 50px; 
+    height: 50px; 
+}
+.navbar .icons {
+    display: flex;
+    flex-direction: row; 
+}
+
+.navbar .menu a{
+    flex-direction: center;
+
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.15s;
+    margin-left: 40px;
+}
+.navbar a {
+    flex-direction: center;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.15s;
+    margin-left: 40px;
+}
+
+.navbar a:hover {
+    background-color: #333;
+    color: blue;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+.background {
+    background-image: url(images/mainpage.jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.footer .links a{
+    flex-direction: center;
+
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.15s;
+    margin-left: 40px;
+}
+
+.footer a:hover {
+    background-color: #333;
+    color: blue;
+}
+ 
+
+
