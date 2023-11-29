@@ -1,5 +1,8 @@
 
-* {
+*html{
+    scroll-behavior: smooth;
+}
+*{
     box-sizing: border-box;
     margin: 0;
     pad: 0;
@@ -17,10 +20,10 @@ header {
     align-items: center;
     padding: 10px 10% 10px 0px;
     background-color: black;
-    z-index: 1;
-    position: fixed;
-    width: calc(100% - 17px);
-    margin-right: 40px;
+    z-index: 1000;
+    position: fixed; 
+    width: 100%;
+    /* margin-right: 40px; */
 }
 
 .logo{
@@ -28,7 +31,7 @@ header {
     width: 150px; 
     height: 50px; 
     padding: 0;
-    margin-left: 0;
+    margin-left: 40px;
 }
 
 .navbar {
@@ -72,12 +75,17 @@ header {
 }
 
 .background {
-    background-image: url(images/DmOQtYIU4AALlBQ.jpg);
+    background-image: url(images/background.jpg);
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+}
+@media only screen and (max-width: 600px) {
+    .background {
+        background-image: url(images/DmOQtYIU4AALlBQ.jpg); /* Replace with your mobile image URL */
+    }
 }
 .background1{
     background-image: url(images/profile.jpg);
@@ -87,12 +95,18 @@ header {
     background-size: cover;
     position: relative;
 }
+@media only screen and (max-width: 600px) {
+    .background {
+        background-image: url(images/profile.jpg); /* Replace with your mobile image URL */
+    }
+}
 body, html{
     height: 100%;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-  }
+
+}
 .text {
     position: absolute;
     color: black;
@@ -141,35 +155,52 @@ footer{
     height: 25px;
 }
 
-.Events {
-    width: 80%; /* Adjust as needed */
-    margin: auto;
-}
-.event{
-    padding: 20px 0; 
-    color: black; 
-    font-size: 25px; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 50%;
-    text-align: center;
-} 
-.event ul {
-    display: flex; 
-    justify-content: center; 
-    padding: 0; 
-    list-style-type: none; 
+.event-details h2 {
+    margin-bottom: 0px; /* Adjust as needed */
 }
 
-.event ul li {
-    margin: 0 60px; 
+.sub-details h3 {
+    margin-top: 0px; /* Adjust as needed */
 }
-.event p {
+
+.sub-details {
     display: flex;
-    justify-content: center;
+    justify-content:flex-start;
+    padding: none;
+    margin: none;
+    gap: 30px;
+}
+
+.details-button {
+    background-color: blue; /* Change to the color you want */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: flex; /* Add this */
+    align-items: center; /* Add this */
+    justify-content: center; /* Add this */
+    margin: 4px 2px;
+    cursor: pointer;
+    height: 50px;
+    width: 150px;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+.details-button:hover {
+    background-color: cyan; /* This will be the new color of the button when hovered */
+    color: blue;
+}
+
+.event-name{
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+}
+.event-details{
+    display: flex;
+    justify-content: space-between;
+    height:88px;
 }
 body{
     background-color:lightgrey;
@@ -216,25 +247,49 @@ body{
     width: 75%;
     margin: 100px auto;
     height: 50%
-} */
+} 
 
 /* ///////////////////////////////////////////////////////////////////////// slideshow */
-.slideshow-container {
+.Slideshow-container {
     overflow: hidden;
     white-space: nowrap;
     user-select: none;
     cursor: pointer;
     width: 600px;
     height: 400px;
-  }
+}
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%; /* Adjust this value according to your needs */
+}
+.slideshow-container{
+    overflow: hidden;
+    white-space: nowrap;
+    user-select: none;
+    cursor: pointer;
+    width: 100vw;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+}
+.mySlidesA {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+ 
   
-  .mySlides {
+.mySlides {
     display: inline-block;
     position: relative;
-  }
+}
+
   
   /* Style the arrows */
-  .arrow {
+.arrow {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -247,22 +302,28 @@ body{
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
-  }
+}
   
   /* Position the "next button" to the right */
-  .right {
+.right {
     right: 0;
     border-radius: 3px 0 0 3px;
-  }
+}
   
   /* On hover, add a black background color with a little bit see-through */
-  .arrow:hover {
+.arrow:hover {
     background-color: rgba(0,0,0,0.8);
-  }
-  .center {
+}
+.center {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 250px;
     width: 250px;
 }
+
+.event-details{
+    margin-right: 7%;
+    margin-left: 7%;
+}
+
