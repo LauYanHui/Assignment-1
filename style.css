@@ -1,113 +1,268 @@
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: black;
-    padding: 20px;
-}
-.footer  {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: black;
-    padding: 20px;
-}
-.footer .logo img{
-    width: 150px;
-    height: 50px;
-    padding: none;
-    margin: none;
-}
-.footer .icons img{
-    width: 50px;
-    height: 50px;
-    padding: none;
-    margin: none;
-}
-.footer .links{
-    display: flex;
-    justify-content:space-around;
-    gap: 10px;
-    flex-grow: 2;
-}
-.navbar .logo, .navbar {
-    flex-grow: 1;
-}
 
-.navbar .menu {
-    display: flex;
-    justify-content:space-around;
-    gap: 10px;
-    flex-grow: 2;
-}
-
-.navbar .logo img {
-
-    width: 150px; 
-    height: auto; 
-    padding: 0;
-}
-
-.navbar .icon img {
-    width: 50px; 
-    height: 50px; 
-}
-.navbar .icons {
-    display: flex;
-    flex-direction: row; 
-}
-
-.navbar .menu a{
-    flex-direction: center;
-
-    color: white;
-    text-decoration: none;
-    cursor: pointer;
-    transition: color 0.15s;
-    margin-left: 40px;
-}
-.navbar a {
-    flex-direction: center;
-    color: white;
-    text-decoration: none;
-    cursor: pointer;
-    transition: color 0.15s;
-    margin-left: 40px;
-}
-
-.navbar a:hover {
-    background-color: #333;
-    color: blue;
-}
-
-body, html {
-    height: 100%;
+* {
+    box-sizing: border-box;
     margin: 0;
+    pad: 0;
+    /* background-color: whtie; */
+}
+*before{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10% 10px 0px;
+    background-color: black;
+    z-index: 1;
+    position: fixed;
+    width: calc(100% - 17px);
+    margin-right: 40px;
+}
+
+.logo{
+    cursor: pointer;
+    width: 150px; 
+    height: 50px; 
     padding: 0;
-  }
+    margin-left: 0;
+}
+
+.navbar {
+    background-color: black;
+    text-align: center;
+    
+}
+
+.navbar li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.navbar li a{
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    padding: 0 10px;
+}
+
+/* .navbar li a:hover{
+     color:blue; 
+    /* text-decoration: underline;
+    text-decoration-color: white;
+    transition: 0.4s; }*/
+
+.navbar li a:hover:after{
+    width: 100%;
+}
+.navbar li a:after{
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 3px;
+    width:0;
+    left:0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
 .background {
-    background-image: url(images/mainpage.jpg);
+    background-image: url(images/DmOQtYIU4AALlBQ.jpg);
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
 }
+.background1{
+    background-image: url(images/profile.jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+body, html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+.text {
+    position: absolute;
+    color: black;
+    font-size: x-large; 
 
-.footer .links a{
-    flex-direction: center;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: black;
+}
+.text-under-background1 {
+    padding: 20px 0; 
+    color: black; 
+    font-size: 16px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
-    color: white;
-    text-decoration: none;
+
+.text-under-background1 ul {
+    display: flex; 
+    justify-content: center; 
+    padding: 0; 
+    list-style-type: none; 
+}
+
+.text-under-background1 ul li {
+    margin: 0 60px; 
+    
+    
+}
+.text-under-background1 .aboutus{
+    text-align: center;
+    width: 50%;
+}
+.text-under-background1 img {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25px;
+    height: 25px;
+}
+
+.Events {
+    width: 80%; /* Adjust as needed */
+    margin: auto;
+}
+.event{
+    padding: 20px 0; 
+    color: black; 
+    font-size: 25px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    text-align: center;
+} 
+.event ul {
+    display: flex; 
+    justify-content: center; 
+    padding: 0; 
+    list-style-type: none; 
+}
+
+.event ul li {
+    margin: 0 60px; 
+}
+.event p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    background-color:lightgrey;
+    justify-content: center;
+    align-items: center;
+}
+.text-under-background1 .image-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.image-container {
+    display: flex;
+    justify-content: space-between;
+}
+.image-container img {
+    margin: 0 10px;
+}
+/*/////////////////////////////////////////////////////////*/
+/* container{
+    width: 200px;
+    margin: 0 auto;
+    height: 100px;
+}
+  
+.pic-container {
+    white-space:nowrap; 
+    overflow:scroll;
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    width: 250px;
+}
+.slideshow-container {
+    height: 250px;
+    position: relative;
+    margin: auto;
+    max-width: 100%;
+}
+.slider{
+    width: 75%;
+    margin: 100px auto;
+    height: 50%
+} */
+
+/* ///////////////////////////////////////////////////////////////////////// slideshow */
+.slideshow-container {
+    overflow: hidden;
+    white-space: nowrap;
+    user-select: none;
     cursor: pointer;
-    transition: color 0.15s;
-    margin-left: 40px;
+    width: 600px;
+    height: 400px;
+  }
+  
+  .mySlides {
+    display: inline-block;
+    position: relative;
+  }
+  
+  /* Style the arrows */
+  .arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .right {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .arrow:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    width: 250px;
 }
-
-.footer a:hover {
-    background-color: #333;
-    color: blue;
-}
- 
-
-
