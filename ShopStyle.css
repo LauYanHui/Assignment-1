@@ -234,4 +234,23 @@ body, html{
       float: none;
     }
   }
+  .subscribe {
+    display: flex;
+    margin-right: 10px;
+}
+footer p{
+    color: white;
+}
+
+.footer p{
+    margin: 10px;
+    padding: 10px;
+}
+  
+.newsletter-text {
+    margin-right: 20px;
+}
+.newsletter-form {
+    margin-left: 20px;
+}
   
