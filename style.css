@@ -1,19 +1,21 @@
-
+/* Targets the HTML element and sets smooth scrolling behavior */
 *html{
     scroll-behavior: smooth;
 }
+/* Targets all elements, sets box-sizing to border-box, and resets margin and padding to 0 */
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     /* background-color: whtie; */
 }
+/* Targets pseudo-elements before an element, sets padding, margin, and box-sizing to border-box */
 *before{
     padding:0;
     margin: 0;
     box-sizing: border-box;
 }
-
+/* Targets elements with the class 'header' and defines its styles */
 header {
     display: flex;
     justify-content: space-between;
@@ -25,7 +27,7 @@ header {
     width: 100%;
     /* margin-right: 40px; */
 }
-
+/* Targets elements with the class 'logo' and defines its styles */
 .logo{
     cursor: pointer;
     width: 150px; 
@@ -33,18 +35,18 @@ header {
     padding: 0;
     margin-left: 40px;
 }
-
+/* Targets elements with the class 'navbar' and defines its styles */
 .navbar {
     background-color: black;
     text-align: center;
     
 }
-
+/* Targets list items within elements with the class 'navbar' and defines their styles */
 .navbar li {
     display: inline-block;
     padding: 0px 20px;
 }
-
+/* Targets anchor elements within list items of 'navbar' and defines their styles */
 .navbar li a{
     position: relative;
     text-decoration: none;
@@ -60,10 +62,11 @@ header {
     /* text-decoration: underline;
     text-decoration-color: white;
     transition: 0.4s; }*/
-
+/* Targets anchor elements within list items of 'navbar' on hover and defines their styles */
 .navbar li a:hover:after{
     width: 100%;
 }
+/* Targets pseudo-elements after anchor elements within list items of 'navbar' */
 .navbar li a:after{
     content: "";
     position: absolute;
@@ -74,7 +77,7 @@ header {
     bottom: -10px;
     transition: 0.3s;
 }
-
+/* Targets elements with the class 'background' and defines its styles what I use for the main home screen*/
 .background {
     background-image: url(images/background.jpg);
     height: 100%;
@@ -83,11 +86,13 @@ header {
     background-size: cover;
     position: relative;
 }
+/* Media query for screens with a maximum width of 600px */
 @media only screen and (max-width: 600px) {
     .background {
         background-image: url(images/DmOQtYIU4AALlBQ.jpg); /* Replace with your mobile image URL */
     }
 }
+/* Targets elements with the class 'background1' and defines its styles what I use for the about us page*/
 .background1{
     background-image: url(images/profile.jpg);
     height: 100%;
@@ -229,36 +234,6 @@ body{
 .image-container img {
     margin: 0 10px;
 }
-/*/////////////////////////////////////////////////////////*/
-/* container{
-    width: 200px;
-    margin: 0 auto;
-    height: 100px;
-}
-  
-.pic-container {
-    white-space:nowrap; 
-    overflow:scroll;
-}
-.center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 250px;
-    width: 250px;
-}
-.slideshow-container {
-    height: 250px;
-    position: relative;
-    margin: auto;
-    max-width: 100%;
-}
-.slider{
-    width: 75%;
-    margin: 100px auto;
-    height: 50%
-} 
-
 /* ///////////////////////////////////////////////////////////////////////// slideshow */
 .Slideshow-container {
     overflow: hidden;
