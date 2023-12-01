@@ -10,7 +10,7 @@ Some of the features that the website offers are firstly the about us page which
 ###Design Process
 - As a fan of the band I would want to know each member and their respective social media
 - If I stumble accross the website, I would want to know about their popular music and some albums
-- I would also want to know some merch they are selling 
+- I would also want to know some merch they are selling .
 - I would also want to be able to receive newsletter if they offer those.
 
 #### Technology Used
