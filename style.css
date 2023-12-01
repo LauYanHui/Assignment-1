@@ -5,7 +5,7 @@
 *{
     box-sizing: border-box;
     margin: 0;
-    pad: 0;
+    padding: 0;
     /* background-color: whtie; */
 }
 *before{
@@ -52,6 +52,7 @@ header {
     font-size: 18px;
     letter-spacing: 0.5px;
     padding: 0 10px;
+    cursor: pointer;
 }
 
 /* .navbar li a:hover{
@@ -166,20 +167,20 @@ footer{
 .sub-details {
     display: flex;
     justify-content:flex-start;
-    padding: none;
-    margin: none;
+    padding: 0;
+    margin: 0;
     gap: 30px;
 }
 
 .details-button {
-    background-color: blue; /* Change to the color you want */
-    border: none;
+    background-color: blue;
+    border: 0; /* Set initial border to 0 */
     color: white;
     padding: 15px 32px;
     text-align: center;
-    display: flex; /* Add this */
-    align-items: center; /* Add this */
-    justify-content: center; /* Add this */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 4px 2px;
     cursor: pointer;
     height: 50px;
@@ -187,10 +188,16 @@ footer{
     text-decoration: none;
     transition: all 0.5s ease;
 }
+
 .details-button:hover {
-    background-color: cyan; /* This will be the new color of the button when hovered */
+    background-color: lightgrey;
     color: blue;
+    border: 1px solid black; /* Set border to 1px and black when hovered */
 }
+.details-button a{
+    cursor: pointer;
+}
+
 
 .event-name{
     display: flex;
@@ -206,6 +213,9 @@ body{
     background-color:lightgrey;
     justify-content: center;
     align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
 }
 .text-under-background1 .image-container {
     display: flex;
@@ -256,14 +266,15 @@ body{
     user-select: none;
     cursor: pointer;
     width: 600px;
-    height: 400px;
+    height: 338px;
 }
 .slider {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50%; /* Adjust this value according to your needs */
+    height: 20%; /* Adjust this value according to your needs */
 }
+
 .slideshow-container{
     overflow: hidden;
     white-space: nowrap;
@@ -273,12 +284,16 @@ body{
     height: 400px;
     align-items: center;
     justify-content: center;
+    display: flex;
 }
 .mySlidesA {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
+    max-width: 30%;
+    height: 250px;
+    width: 250px;
 }
  
   
@@ -327,3 +342,67 @@ body{
     margin-left: 7%;
 }
 
+.short-hr{
+    width: 86%;
+    border: 0;
+    height: 1px;
+    background: black;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media screen and (max-width:600px){
+    .slider {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 10%; /* Adjust this value according to your needs */
+    }
+    .slideshow-container {
+        height: 200px; /* Adjust this value according to your needs */
+    }
+}
+
+/* Your existing CSS */
+/* .image-class {
+    width: 100vw;
+    height: 100vh;
+} */
+
+/* Add this media query for smaller screens */
+@media screen and (max-width: 600px) {
+    .image-class {
+        width: 100%; /* Adjust this value according to your needs */
+        height: 50%; /* Adjust this value according to your needs */
+    }
+}
+.navbar .icons img{
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    width: 50px;
+}
+.icons a img {
+    margin-right: 10px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .background, .background1 {
+        height: 50%;
+    }
+}
+.title h1{
+    text-align: center;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+}
+
+.icons a img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
